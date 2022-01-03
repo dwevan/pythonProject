@@ -1,0 +1,5 @@
+sentiment analysis
+
+taken tweets from all royal colleges as members of acad medical royal colleges available at: https://www.aomrc.org.uk/about-us/academy-members/
+
+also taken some tweets from other large medical organisations
