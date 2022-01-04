@@ -9,7 +9,8 @@ from nltk.sentiment.vader import SentimentIntensityAnalyzer
 
 sid = SentimentIntensityAnalyzer()
 
-file = 'dwevan_tweets at_2022-01-03.csv'
+#enter path to file below
+file = r'CSV_files\other_MDT_colleges\UKCP_Updates_tweets at_2022-01-03.csv'
 
 df = pd.read_csv(file)
 df.head()
@@ -36,16 +37,20 @@ print(df.head())
 df.to_csv(file, index=False)
 print(df['compound'].mean())
 
-#create account name for CSV
-account = file.replace('_tweets at_2022-01-03 copy.csv','')
+#create account name for CSV - may need to be tweaked based on file structure (I know its not good syntax! it just works!)
+account = file.replace('_tweets at_2022-01-03.csv','').replace('CSV_files\\','').replace('other_MDT_colleges\\','').replace('Acad_med_colleges\\','')
 
-# write to csv
+# write to csv (https://stackoverflow.com/questions/2363731/append-new-row-to-old-csv-file-python)
 import csv
+
 fields=[account,df['id'].count(),df['compound'].mean()]
-with open(r'CSV_files\Scoring_files\acadmedscores.csv', 'a', newline='') as f:
+
+with open(r'CSV_files\Scoring_files\MDTscores.csv', 'a', newline='') as f:
   writer = csv.writer(f)
   writer.writerow(fields)
 
 with open(r'CSV_files\Scoring_files\allscores.csv', 'a', newline='') as f:
   writer = csv.writer(f)
   writer.writerow(fields)  
+  
+print(fields)
