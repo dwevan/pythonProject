@@ -3,21 +3,19 @@
 import nltk
 import pandas as pd
 
-
-nltk.download('vader_lexicon')
-
+#remove comment below to download lexicon - only needed first time
+#nltk.download('vader_lexicon')
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 
 sid = SentimentIntensityAnalyzer()
 
+file = 'dwevan_tweets at_2022-01-03.csv'
 
-df = pd.read_csv('CSV_files\Acad_med_colleges\RCPI_news_tweets at_2022-01-03.csv')
+df = pd.read_csv(file)
 df.head()
-print(df.head())
-
 print(
   'number of tweets downloaded: ' +
-  df['id'].count()
+  str(df['id'].count())
 )
 
 df.dropna(inplace=True)
@@ -26,12 +24,28 @@ sid.polarity_scores(df.iloc[0]['text'])
 
 df['scores'] = df['text'].apply(lambda text:sid.polarity_scores(text))
 df.head()
-print(df.head())
 
+#The compound score is computed by summing the valence scores of each word in the lexicon, adjusted according to the rules, and then normalized to be between -1 (most extreme negative) and +1 (most extreme positive). This is the most useful metric if you want a single unidimensional measure of sentiment for a given sentence. Calling it a 'normalized, weighted composite score' is accurate.
 df['compound'] = df['scores'].apply(lambda d:d['compound'])
 df.head()
-print(df.head())
 
-df['score'] = df['compound'].apply(lambda score: 'pos' if score >=0 else 'neg')
-df.head()
+#df['score'] = df['compound'].apply(lambda score: 'pos' if score >=0 else 'neg')
+#df.head()
+
 print(df.head())
+df.to_csv(file, index=False)
+print(df['compound'].mean())
+
+#create account name for CSV
+account = file.replace('_tweets at_2022-01-03 copy.csv','')
+
+# write to csv
+import csv
+fields=[account,df['id'].count(),df['compound'].mean()]
+with open(r'CSV_files\Scoring_files\acadmedscores.csv', 'a', newline='') as f:
+  writer = csv.writer(f)
+  writer.writerow(fields)
+
+with open(r'CSV_files\Scoring_files\allscores.csv', 'a', newline='') as f:
+  writer = csv.writer(f)
+  writer.writerow(fields)  
