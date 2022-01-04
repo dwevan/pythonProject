@@ -1,5 +1,13 @@
-file = r'CSV_files\other_MDT_colleges\UKCP_Updates_tweets at_2022-01-03.csv'
+import os
+import glob
+import pandas as pd
+os.chdir('CSV_files\Acad_med_colleges')
 
-account = file.replace('_tweets at_2022-01-03.csv','').replace('CSV_files\\','').replace('other_MDT_colleges\\','').replace('Acad_med_colleges\\','')
-  
-print(account +' test')
+extension = 'csv'
+all_filenames = [i for i in glob.glob('*.{}'.format(extension))]
+
+#combine all files in the list
+combined_csv = pd.concat([pd.read_csv(f) for f in all_filenames ])
+
+#export to csv
+combined_csv.to_csv( "combined_csv.csv", index=False, encoding='utf-8-sig')
