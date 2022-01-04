@@ -1,23 +1,23 @@
-id,created_at,text
-1460294399435362313,2021-11-15 17:11:30+00:00,@henryellison30 @MisterABK @AliPlumb -_- I hate that you’re not wrong… I’ve only just been able to emerge from my summer hibernation
-1393853503257432066,2021-05-16 08:59:06+00:00,"@EviPoimenidi @chebbes Is this a kind of thing that exception reporting would be useful for? I know it’s not the ‘ideal’ mechanism. But if you’re working overtime due to things outside your control, isn’t that what it’s there for?"
-1329198156849029127,2020-11-18 23:01:50+00:00,"@henlog1990 It’s the ‘Donald trump is a genius, that’s what the j is for’ that just tops it all off"
-1230034860292628480,2020-02-19 07:42:18+00:00,"@UKANRO hi, I’m having issues getting to the application form for st3, I keep getting server issues and errors from yesterday. How can I sort this?"
-976075557975797761,2018-03-20 12:38:42+00:00,Neater version https://t.co/1ic9GUD4Pg
-976070961094123521,2018-03-20 12:20:26+00:00,Careers day 2 days later https://t.co/ZIuVsMu8HK
-886827845384884225,2017-07-17 06:00:09+00:00,"@BBCTomFeilden @BBCr4today 6 weights, 20, 10, 5,3,2,1. Goes up to 41kg too!"
-852259870351011840,2017-04-12 20:39:21+00:00,"@truGym Hi, wondering if you have a gym in Leicester/if there are any plans for one? Thanks"
-698272505841197056,2016-02-12 22:28:33+00:00,@TheLastLeg #dickoftheyear - jeremy hunt - just the name...
-565117255332397056,2015-02-10 11:57:07+00:00,#F1careers http://t.co/JSKSUdLSSu
-485554531456274432,2014-07-05 22:43:16+00:00,C'mon Holland!! Don't be English and fail on penalties #NEDvsCRC
-466543567117496322,2014-05-14 11:40:29+00:00,@virginmedia all sorted thanks :)
-466334187545706497,2014-05-13 21:48:29+00:00,"@GroovesharkHelp back online, thank you!"
-466333076105482241,2014-05-13 21:44:04+00:00,"@GroovesharkHelp thats ok, it works fine on a mobile device and the page sorta loads on a VPN too... Im with @virginmedia btw"
-466331857051983872,2014-05-13 21:39:13+00:00,"@GroovesharkHelp down for me too..checked chrome for update, cleared cache and removed extensions. not down on phone tho - ISP blocked?"
-445664053533630464,2014-03-17 20:52:45+00:00,Celebrating St.Patricks properly... http://t.co/2EEPLViPbS
-285871121922936833,2012-12-31 22:12:41+00:00,Oh dear god #fartoodrunk
-256395812253364224,2012-10-11 14:08:19+00:00,Has just seen a 2 year old with an ear piercing and a star shaved into their head...#greatparenting
-255955816178393088,2012-10-10 08:59:56+00:00,"Have gone to special school today, have already seen some very interesting things and had my perceptions of disability shifted!"
-255254435243118594,2012-10-08 10:32:54+00:00,Left in a hurry this morning to get to mansfield only to find out... No physiotherapy patients today. #annoying
-243691574075203584,2012-09-06 12:46:13+00:00,@hosepope1991 why hello there! You may be seeing me sooner than you think.. 3.20 today or possibly tomorrow! X
-243585560772501504,2012-09-06 05:44:57+00:00,I love Dropbox because of the device interconnectivity and the ease of storing data. its just so good! http://t.co/eGXvxNl8
+id,label,created_at,text
+1460294399435362313,neg,2021-11-15 17:11:30+00:00,@henryellison30 @MisterABK @AliPlumb -_- I hate that you’re not wrong… I’ve only just been able to emerge from my summer hibernation
+1393853503257432066,neg,2021-05-16 08:59:06+00:00,"@EviPoimenidi @chebbes Is this a kind of thing that exception reporting would be useful for? I know it’s not the ‘ideal’ mechanism. But if you’re working overtime due to things outside your control, isn’t that what it’s there for?"
+1329198156849029127,pos,2020-11-18 23:01:50+00:00,"@henlog1990 It’s the ‘Donald trump is a genius, that’s what the j is for’ that just tops it all off"
+1230034860292628480,neg,2020-02-19 07:42:18+00:00,"@UKANRO hi, I’m having issues getting to the application form for st3, I keep getting server issues and errors from yesterday. How can I sort this?"
+976075557975797761,neu,2018-03-20 12:38:42+00:00,Neater version https://t.co/1ic9GUD4Pg
+976070961094123521,neu,2018-03-20 12:20:26+00:00,Careers day 2 days later https://t.co/ZIuVsMu8HK
+886827845384884225,neu,2017-07-17 06:00:09+00:00,"@BBCTomFeilden @BBCr4today 6 weights, 20, 10, 5,3,2,1. Goes up to 41kg too!"
+852259870351011840,pos,2017-04-12 20:39:21+00:00,"@truGym Hi, wondering if you have a gym in Leicester/if there are any plans for one? Thanks"
+698272505841197056,neu,2016-02-12 22:28:33+00:00,@TheLastLeg #dickoftheyear - jeremy hunt - just the name...
+565117255332397056,neu,2015-02-10 11:57:07+00:00,#F1careers http://t.co/JSKSUdLSSu
+485554531456274432,neg,2014-07-05 22:43:16+00:00,C'mon Holland!! Don't be English and fail on penalties #NEDvsCRC
+466543567117496322,neu,2014-05-14 11:40:29+00:00,@virginmedia all sorted thanks :)
+466334187545706497,pos,2014-05-13 21:48:29+00:00,"@GroovesharkHelp back online, thank you!"
+466333076105482241,pos,2014-05-13 21:44:04+00:00,"@GroovesharkHelp thats ok, it works fine on a mobile device and the page sorta loads on a VPN too... Im with @virginmedia btw"
+466331857051983872,neg,2014-05-13 21:39:13+00:00,"@GroovesharkHelp down for me too..checked chrome for update, cleared cache and removed extensions. not down on phone tho - ISP blocked?"
+445664053533630464,pos,2014-03-17 20:52:45+00:00,Celebrating St.Patricks properly... http://t.co/2EEPLViPbS
+285871121922936833,neg,2012-12-31 22:12:41+00:00,Oh dear god #fartoodrunk
+256395812253364224,neg,2012-10-11 14:08:19+00:00,Has just seen a 2 year old with an ear piercing and a star shaved into their head...#greatparenting
+255955816178393088,pos,2012-10-10 08:59:56+00:00,"Have gone to special school today, have already seen some very interesting things and had my perceptions of disability shifted!"
+255254435243118594,neg,2012-10-08 10:32:54+00:00,Left in a hurry this morning to get to mansfield only to find out... No physiotherapy patients today. #annoying
+243691574075203584,pos,2012-09-06 12:46:13+00:00,@hosepope1991 why hello there! You may be seeing me sooner than you think.. 3.20 today or possibly tomorrow! X
+243585560772501504,pos,2012-09-06 05:44:57+00:00,I love Dropbox because of the device interconnectivity and the ease of storing data. its just so good! http://t.co/eGXvxNl8
